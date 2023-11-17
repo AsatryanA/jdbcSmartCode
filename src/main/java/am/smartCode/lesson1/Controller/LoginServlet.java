@@ -1,6 +1,6 @@
 package am.smartCode.lesson1.Controller;
 
-import am.smartCode.lesson1.Repository.impl.UserRepositoryImpl;
+import am.smartCode.lesson1.Repository.jdbcImpl.UserRepositoryJdbcImpl;
 import am.smartCode.lesson1.Service.UserService;
 import am.smartCode.lesson1.util.DatabaseConnection;
 
@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            UserService userService = new UserService(new UserRepositoryImpl(DatabaseConnection.getInstance().getConnection()));
+            UserService userService = new UserService(new UserRepositoryJdbcImpl(DatabaseConnection.getInstance().getConnection()));
 
             String username = req.getParameter("username");
             String password = req.getParameter("password");

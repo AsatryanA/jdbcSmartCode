@@ -1,9 +1,11 @@
 package am.smartCode.lesson1.Controller;
 
 import am.smartCode.lesson1.Model.User;
-import am.smartCode.lesson1.Repository.impl.UserRepositoryImpl;
+import am.smartCode.lesson1.Repository.jdbcImpl.UserRepositoryJdbcImpl;
+import am.smartCode.lesson1.Repository.jpaImpl.UserRepositoryJpaImpl;
 import am.smartCode.lesson1.Service.UserService;
 import am.smartCode.lesson1.util.DatabaseConnection;
+import am.smartCode.lesson1.util.HibernateUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -17,7 +19,7 @@ public class RegisterServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            UserService userService = new UserService(new UserRepositoryImpl(DatabaseConnection.getInstance().getConnection()));
+            UserService userService = new UserService(new UserRepositoryJpaImpl(HibernateUtil.getSessionFactory()));
 
             String firstName = req.getParameter("firstName");
             String lastName = req.getParameter("lastName");
@@ -41,8 +43,6 @@ public class RegisterServlet extends HttpServlet {
 
             req.getRequestDispatcher("index.jsp").forward(req, resp);
 
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
         } catch (RuntimeException ex) {
             req.setAttribute("message", ex.getMessage());
             req.getRequestDispatcher("register.jsp").forward(req, resp);
