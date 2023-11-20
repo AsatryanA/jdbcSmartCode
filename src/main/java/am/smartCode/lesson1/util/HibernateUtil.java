@@ -1,5 +1,8 @@
 package am.smartCode.lesson1.util;
 
+import am.smartCode.lesson1.Model.Account;
+import am.smartCode.lesson1.Model.Address;
+import am.smartCode.lesson1.Model.Book;
 import am.smartCode.lesson1.Model.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -30,7 +33,11 @@ public class HibernateUtil {
                 configuration.setProperties(settings);
 
                 configuration.addAnnotatedClass(User.class);
-                configuration.addAnnotatedClass(Car.class);
+                configuration.addAnnotatedClass(Address.class);
+                configuration.addAnnotatedClass(Account.class);
+                configuration.addAnnotatedClass(Book.class);
+              //  configuration.addPackage("am.smartCode.lesson1.Model");
+
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties()).build();
 

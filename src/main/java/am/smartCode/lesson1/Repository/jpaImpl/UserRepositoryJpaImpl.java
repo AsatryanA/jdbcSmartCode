@@ -4,6 +4,7 @@ import am.smartCode.lesson1.Model.User;
 import am.smartCode.lesson1.Repository.UserRepository;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 import java.util.List;
@@ -19,15 +20,21 @@ public class UserRepositoryJpaImpl implements UserRepository {
     @Override
     public void create(User user) {
         var session = sessionFactory.openSession();
+        var transaction = session.beginTransaction();
         session.save(user);
+        transaction.commit();
         session.close();
+
     }
 
     @Override
     public void delete(Long id) {
         var session = sessionFactory.openSession();
+        var transaction = session.beginTransaction();
         User userById = getUserById(id);
         session.delete(userById);
+        transaction.commit();
+        session.close();
     }
 
     @Override

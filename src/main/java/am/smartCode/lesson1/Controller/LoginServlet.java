@@ -24,6 +24,9 @@ public class LoginServlet extends HttpServlet {
 
             userService.login(username, password);
 
+
+
+
             if (rememberMe != null && rememberMe.equals("on")) {
                 Cookie cookie = new Cookie("rememberMe", username + ":" + password);
                 cookie.setMaxAge(60*60);
