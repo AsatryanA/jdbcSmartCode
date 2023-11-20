@@ -3,6 +3,8 @@ package am.smartCode.lesson1.Model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -27,4 +29,19 @@ public class User {
 
     private int amount;
 
+    @OneToMany(fetch = FetchType.LAZY )
+    @JoinColumn(name = "user_id")
+    private List<Address> addresses = new ArrayList<>();
+
+/*
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "id", referencedColumnName = "id")
+    private Account account;
+
+    @ManyToMany
+    @JoinTable(name = "user_book",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "book_id")
+    )
+    private List<Book> books;*/
 }
