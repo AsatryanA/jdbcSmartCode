@@ -5,4 +5,16 @@
       <sourceFolder url="file://$MODULE_DIR$/src2" isTestSource="false" />
     </content>
   </component>
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/application.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="462a515c-390d-4bcf-808a-a167cd4b019c" />
+  </component>
 </module>

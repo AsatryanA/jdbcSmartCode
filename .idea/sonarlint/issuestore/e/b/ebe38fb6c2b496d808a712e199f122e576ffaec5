@@ -1,0 +1,8 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©’λψÿÿÿÿ
+y
+java:S1128"\Remove this unused import 'am.smartCode.lesson1.Repository.jdbcImpl.UserRepositoryJdbcImpl'.(Π‰Λ8‚ƒΨΑ1
+f
+java:S1128"IRemove this unused import 'am.smartCode.lesson1.util.DatabaseConnection'.(ύε‚Ή8‚ƒΨΑ1
+O
+java:S1128"2Remove this unused import 'java.sql.SQLException'.(ΫοΖ8‚ƒΨΑ1

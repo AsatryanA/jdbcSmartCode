@@ -1,0 +1,7 @@
+
+`	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+l
+java:S1192"QDefine a constant instead of duplicating this literal "/secure/home.jsp" 3 times.(áÍ•™ÿÿÿÿÿ
+c
+java:S1192"HDefine a constant instead of duplicating this literal "message" 4 times.(Œ”œûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©’ëøÿÿÿÿ

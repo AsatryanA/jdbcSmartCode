@@ -1,9 +1,9 @@
 package am.smartCode.lesson1.util;
 
-import am.smartCode.lesson1.Model.Account;
-import am.smartCode.lesson1.Model.Address;
-import am.smartCode.lesson1.Model.Book;
-import am.smartCode.lesson1.Model.User;
+import am.smartCode.lesson1.model.Account;
+import am.smartCode.lesson1.model.Address;
+import am.smartCode.lesson1.model.Book;
+import am.smartCode.lesson1.model.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -30,6 +30,7 @@ public class HibernateUtil {
                 settings.put(Environment.SHOW_SQL, "true");
                 settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
                 settings.put(Environment.HBM2DDL_AUTO, "update");
+                settings.put("hibernate.format_sql", "true");
                 configuration.setProperties(settings);
 
                 configuration.addAnnotatedClass(User.class);

@@ -1,0 +1,8 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ø†‹ô8¼ï“ùÁ1
+{
+java:S21420"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾8Ñï“ùÁ1
+n
+java:S5998D"LRefactor this repetition that can lead to a stack overflow for large inputs.(ÜÄõÜşÿÿÿÿ8Ñï“ùÁ1
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Qualifier'.(íàÄ®ıÿÿÿÿ8… ¯³Â1

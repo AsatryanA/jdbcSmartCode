@@ -1,0 +1,16 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ôö‘ï8ÖÍù³Â1
+~
+java:S1128"\Remove this unused import 'am.smartCode.lesson1.repository.jdbcImpl.UserRepositoryJdbcImpl'.(¹ŸËúÿÿÿÿ8ãä¡´Â1
+w
+java:S1128"ZRemove this unused import 'am.smartCode.lesson1.repository.jpaImpl.UserRepositoryJpaImpl'.(÷Éû8ää¡´Â1
+‚
+java:S1128	"`Remove this unused import 'am.smartCode.lesson1.repository.springImpl.UserRepositorySpringImpl'.(„’ŸÅûÿÿÿÿ8ää¡´Â1
+u
+java:S1128"XRemove this unused import 'org.springframework.jdbc.datasource.DriverManagerDataSource'.(æ´Ô½8ää¡´Â1
+t
+java:S1128"WRemove this unused import 'org.springframework.orm.hibernate5.LocalSessionFactoryBean'.(ÏÒÅÑ8ää¡´Â1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ää¡´Â1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ää¡´Â1

@@ -1,0 +1,25 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112B"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112P"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112]"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112j"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÏÂÓÓùÿÿÿÿ
+e
+java:S2095e"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(·…áÿ
+b
+java:S2095Z"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÄŞÖ’ÿÿÿÿÿ
+b
+java:S2095*"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÀÒ…Æıÿÿÿÿ
+e
+java:S2095K"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(­ı­Ã
+e
+java:S20957"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ğÂ¶
+]
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(úËÉŸ
+]
+java:S2095 "GUse try-with-resources or close this "Statement" in a "finally" clause.(ı‚ÇÑ
+w
+java:S1128"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ğùçøùÿÿÿÿ8ÏÔ¨áÁ1

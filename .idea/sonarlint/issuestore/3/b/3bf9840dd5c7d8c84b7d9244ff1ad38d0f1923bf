@@ -1,0 +1,14 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼³Òøÿÿÿÿ8İ©ù³Â1
+b
+java:S2095?"EUse try-with-resources or close this "Session" in a "finally" clause.(ÓÔ¶8„ªù³Â1
+b
+java:S2095'"EUse try-with-resources or close this "Session" in a "finally" clause.(ÓÔ¶8„ªù³Â1
+
+java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(â¥ÿí8„ªù³Â1
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8Œªù³Â1
+t
+java:S1128"WRemove this unused import 'org.springframework.orm.hibernate5.LocalSessionFactoryBean'.(ÏÒÅÑ8Œªù³Â1
+g
+java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8Œªù³Â1

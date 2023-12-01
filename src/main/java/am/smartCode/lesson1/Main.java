@@ -1,43 +1,32 @@
 package am.smartCode.lesson1;
 
-import am.smartCode.lesson1.Model.Address;
-import am.smartCode.lesson1.Model.User;
-import am.smartCode.lesson1.Repository.UserRepository;
-import am.smartCode.lesson1.Repository.jpaImpl.UserRepositoryJpaImpl;
-import am.smartCode.lesson1.util.HibernateUtil;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
 
+import am.smartCode.lesson1.model.User;
+import am.smartCode.lesson1.repository.UserRepository;
+
+import am.smartCode.lesson1.repository.jdbcImpl.UserRepositoryJdbcImpl;
+import am.smartCode.lesson1.repository.jpaImpl.UserRepositoryJpaImpl;
+import am.smartCode.lesson1.repository.springImpl.UserRepositorySpringImpl;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+
+import java.util.ArrayList;
 import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) {
-        UserRepository userRepository = new UserRepositoryJpaImpl(HibernateUtil.getSessionFactory());
 
+        var context = new ClassPathXmlApplicationContext("application.xml");
+        var userRepositorySpring = (UserRepository)context.getBean("userRepositorySpringImpl");
 
-
-/*        Address address = new Address();
-        address.setCountry("Armenia");
-
-        var user = new User();
-        user.setFirstName("first name");
-        user.setLastName("last name");
-        user.setEmail("email1@gmail.com");
-        user.setPassword("password123");
-        user.setAge(20);
-        user.setAmount(1000);
-        user.setAddresses(List.of(address));
-
-        userRepository.create(user);*/
-
-
-
-        var session = HibernateUtil.getSessionFactory().openSession();
-        var transaction = session.beginTransaction();
-        User user = session.get(User.class, 16L);
-
-        user.getAddresses().forEach(System.out::println);
-        transaction.commit();
-        session.close();
+        var user = User.builder()
+                .firstName("Karen")
+                .age(20)
+                .email("Kgfdsfsdfsdsrfen")
+                .amount(200)
+                .build();
+        userRepositorySpring.create(user);
     }
 }

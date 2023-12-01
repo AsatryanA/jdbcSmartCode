@@ -12,7 +12,7 @@
 
     <servlet>
         <servlet-name>start</servlet-name>
-        <servlet-class>am.smartCode.lesson1.Controller.StartServlet</servlet-class>
+        <servlet-class>am.smartCode.lesson1.controller.StartServlet</servlet-class>
     </servlet>
 
 
@@ -23,7 +23,7 @@
 
     <servlet>
         <servlet-name>register</servlet-name>
-        <servlet-class>am.smartCode.lesson1.Controller.RegisterServlet</servlet-class>
+        <servlet-class>am.smartCode.lesson1.controller.RegisterServlet</servlet-class>
     </servlet>
 
 
@@ -35,7 +35,7 @@
 
     <servlet>
         <servlet-name>changePassword</servlet-name>
-        <servlet-class>am.smartCode.lesson1.Controller.ChangePasswordServlet</servlet-class>
+        <servlet-class>am.smartCode.lesson1.controller.ChangePasswordServlet</servlet-class>
     </servlet>
 
 
@@ -47,7 +47,7 @@
 
     <servlet>
         <servlet-name>login</servlet-name>
-        <servlet-class>am.smartCode.lesson1.Controller.LoginServlet</servlet-class>
+        <servlet-class>am.smartCode.lesson1.controller.LoginServlet</servlet-class>
     </servlet>
 
 
@@ -59,7 +59,7 @@
 
     <servlet>
         <servlet-name>logout</servlet-name>
-        <servlet-class>am.smartCode.lesson1.Controller.LogoutServlet</servlet-class>
+        <servlet-class>am.smartCode.lesson1.controller.LogoutServlet</servlet-class>
     </servlet>
 
 

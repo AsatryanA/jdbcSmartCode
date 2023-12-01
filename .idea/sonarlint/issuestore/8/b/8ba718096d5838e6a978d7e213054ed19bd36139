@@ -1,0 +1,9 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Æ“®åùÿÿÿÿ
+H
+java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ
+K
+java:S6437"6Revoke and change this password, as it is compromised.(Ø×^
+E	java:S106"+Replace this use of System.out by a logger.(“™ûÊùÿÿÿÿ
+b
+java:S1871 "LThis branch's code block is the same as the block for the branch on line 30.(Ì“ˆß
